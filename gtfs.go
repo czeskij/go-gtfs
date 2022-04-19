@@ -6,7 +6,7 @@ import (
 	"os"
 	"path"
 
-	csvtag "github.com/artonge/go-csv-tag/v2"
+	csvtag "github.com/czeskij/go-csv-tag/v2"
 )
 
 // Load - load GTFS files
