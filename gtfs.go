@@ -6,7 +6,7 @@ import (
 	"os"
 	"path"
 
-	csvtag "github.com/czeskij/go-csv-tag/v2"
+	csvtag "github.com/oneconstellation/go-csv-tag/v2"
 )
 
 // Load - load GTFS files
@@ -62,8 +62,9 @@ func LoadSplitted(dirPath string, filter map[string]bool) ([]*GTFS, error) {
 }
 
 // Load a directory containing:
-// 	- routes.txt
-// 	- stops.txt
+//   - routes.txt
+//   - stops.txt
+//
 // @param g: the GTFS struct that will receive the data
 // @return an error
 func loadGTFS(g *GTFS, filter map[string]bool) error {
